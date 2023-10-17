@@ -1,12 +1,31 @@
 @startuml
 ' Определение классов и интерфейсов
-class CalculatorPresenter {
-  - View calculatorView
-  - Model calculatorModel
-  + void onCalculate(String operation, double a, double b)
-  + void onClear()
+class SubstractOperation {
+  //+ SubstractOperation(double firstArg, double secondArg)
+  + double substract()
+  - double firstArg
+  - double secondArg
 }
 
+class SumOperation {
+  //+ SumOperation(double firstArg, double secondArg)
+  + double sum()
+  - double firstArg
+  - double secondArg
+}
+
+class CalculationLayer {
+  //+ SumOperation(double firstArg, double secondArg)
+  + double add(double a, double b)
+  + double subtract(double a, double b)
+  + double multiply(double a, double b)
+  + double divide(double a, double b)
+
+}
+
+interface IView {
+  ~ void runCalculator()
+}
 
 
 
