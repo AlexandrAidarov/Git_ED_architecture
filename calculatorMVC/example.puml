@@ -27,6 +27,25 @@ interface IView {
   ~ void runCalculator()
 }
 
+class OutputSlice {
+  + void displayOutput(String result)
+}
+
+class InputSlice {
+  + String getInput()
+}
+
+class ConsoleView {
+  - public ConsoleView()
+  - void runCalculator()
+}
+
+class InputOutputLayer {
+  + String getInput()
+  + void displayOutput(String result)
+}
+
+
 
 
 

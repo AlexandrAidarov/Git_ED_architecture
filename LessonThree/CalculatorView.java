@@ -1,6 +1,6 @@
 package LessonThree;
 
-import java.util.Observer;
+//import java.util.Observer;
 
 // Интерфейс для View
 interface CalculatorView {
